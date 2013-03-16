@@ -27,7 +27,7 @@
 	var presentationName;
 
 	if (~location.search.indexOf('presentation=')) {
-		presentationName = /presentation=([^&]+)/.exec(location.search)[1];
+		presentationName = /presentation=([^&\/]+)/.exec(location.search)[1];
 	}
 	document.write("")
 	document.write("<div class='reveal'>\

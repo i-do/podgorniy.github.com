@@ -1,1 +1,5 @@
+# Sublime project files
 *.sublime-*
+
+# MacOS shit
+.DS_Store

@@ -1,68 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
-	<meta name="author" content="Dmitry Podgorniy">
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="lib/reveal.js/css/reveal.css">
-	<link rel="stylesheet" href="lib/reveal.js/css/theme/default.css" id="theme">
-	<!-- <link rel="stylesheet" href="lib/reveal.js/css/theme/beige.css" id="theme"> -->
-	<link rel="stylesheet" href="lib/reveal.js/lib/css/zenburn.css">
-	<script>
-		document.write( '<link rel="stylesheet" href="lib/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-	</script>
-
-	<!--[if lt IE 9]>
-	<script src="lib/js/html5shiv.js"></script>
-	<![endif]-->
+	<title>Дмитрий Подгорный. Теперь на гитхабе.</title>
 </head>
 <body>
+	<h2>Презентации</h2>
+	<ul>
+		<li><a href="presentation/index.html?presentation=javascript-intro" target="_blank">Первые шаги javascript</a> (примитивы, операторы, ветвление)</li>
+		<li><a href="presentation/index.html?presentation=javascript-intro2" target="_blank">Вторые шаги javascript</a> (объекты, массивы, циклы)</li>
+	</ul>
+	<dl id="presentation">
+		<dt></dt>
+		<dt><a href="presentation/index.html?presentation=javascript-intro2" target="_blank">javascript-intro2</a></dt>
+	</dl>
 
-<script src="lib/reveal.js/lib/js/head.min.js"></script>
-<script src="lib/reveal.js/js/reveal.min.js"></script>
-<script>
-	var presentationName;
+	
+	<h3>Контакты</h3>
+	<div>
+		<dl>
+			<dd><a href="http://dmitrypodgorniy.com/blog/">Блог</a></dd>
+			<dd>Skype: <a href="skype:podgorniy.d?chat">podgorniy.d</a></dd>
+		</dl>
+	</div>
+	<script>
+		;(function () {
+			'use strict';
+		
+			[].slice.call(document.querySelectorAll("#presentation > dt"), function () {
 
-	if (~location.search.indexOf('presentation=')) {
-		presentationName = /presentation=([^&\/]+)/.exec(location.search)[1];
-	}
-	document.write("")
-	document.write("<div class='reveal'>\
-		<div class='slides'>\
-			<section data-markdown='src/" + presentationName + ".md' data-separator='^\n\n\n' data-vertical='^\n\n'>");
-
-	Reveal.initialize({
-		controls: true,
-		progress: true,
-		history: true,
-		center: false,
-
-		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-		// Optional libraries used to extend on reveal.js
-		dependencies: [
-			{ src: 'lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-			{ src: 'lib/reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			{ src: 'lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			{ src: 'lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() {
-				// Force javascript with comment
-				[].slice.call( document.querySelectorAll('pre>code') ).forEach( function (codeNode) {
-					if (~codeNode.innerHTML.indexOf("// js")) {
-						codeNode.className += 'javascript'
-					}
-				} );
-				hljs.initHighlightingOnLoad(); } },
-			{ src: 'lib/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-			{ src: 'lib/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-			// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-			// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-		]
-	});
-</script>
-
+			})
+		}());
+	</script>
 </body>
 </html>

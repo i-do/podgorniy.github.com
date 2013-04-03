@@ -45,7 +45,8 @@
 
 
 ##Стандартные \_\_proto\_\_##
-
+	
+	// js
 	var arr = [];
 	console.dir(arr.__proto__);
 	console.dir(arr.__proto__.__proto__);
@@ -71,7 +72,8 @@ this ссылается на объект, из которого вызывал�
 
 
 ##prototype##
-
+	
+	// js
 	var arr = [];
 	console.log(arr.__proto__ === Array.prototype);
 	var obj = {};
@@ -91,7 +93,8 @@ this ссылается на объект, из которого вызывал�
 
 
 ##Выводы##
-
+	
+	// js
 	var a = {};
 	Object.prototype.test = true;
 	console.log(a.test, ({}).test); // true, true
@@ -129,8 +132,9 @@ this ссылается на объект, из которого вызывал�
 
 ##instanceof##
 
-	console.log([] instanceof Array);	// true
-	console.log([] instanceof Object);	// true
+	// js
+	console.log([] instanceof Array); // true
+	console.log([] instanceof Object); // true
 
 
 ##instanceof##
@@ -154,7 +158,8 @@ this ссылается на объект, из которого вызывал�
 
 
 ##hasOwnProperty##
-
+	
+	// js
 	var a = {};
 	a.hasOwnProperty('toString'); // false
 	a.toString = function () {return 'fffoooo'};
@@ -163,9 +168,10 @@ this ссылается на объект, из которого вызывал�
 
 ##constructor##
 Свойство объекта, ссылающееся на функцию, сконструировавшую этот объект
-
-	console.log(({}).constructor === Object);	// true
-	console.log(([]).constructor === Array);	// true
+	
+	// js
+	console.log(({}).constructor === Object); // true
+	console.log(([]).constructor === Array); // true
 
 
 
@@ -174,7 +180,8 @@ this ссылается на объект, из которого вызывал�
 
 
 ##in##
-
+	
+	// js
 	var a = {
 		test : true
 	};
@@ -231,7 +238,8 @@ this ссылается на объект, из которого вызывал�
 
 
 ##Подсветка конструкторов в firebug##
-
+	
+	// js
 	function F () {}
 	F.prototype.foo = function () {};
 	console.log(F)
@@ -350,8 +358,3 @@ this ссылается на объект, из которого вызывал�
 
 ##Абстрагирование — это хорошо, но ##
 без фанатизма
-	
-
-
-##Высокоуровневые сущности##
-Размышление о задаче в терминах объектов, сущностей

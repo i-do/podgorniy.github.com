@@ -283,7 +283,7 @@ body {
 	text-align: left;
 	/*font-size: 0.55em;*/
 	font-size: 0.8em;
-	font-family: monospace;
+	font-family: Monaco, monospace;
 	line-height: 1.2em;
 
 	word-wrap: break-word;

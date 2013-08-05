@@ -1,5 +1,4 @@
-/*@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);*/
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic-ext);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic-ext);
 
 /**
  * Default theme for reveal.js.
@@ -49,10 +48,10 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #eeeeee;
-  font-family: "Ubuntu Condensed", "League Gothic", Impact, sans-serif;
+  font-family: 'Open Sans Condensed', "League Gothic", Impact, sans-serif;
   line-height: 0.9em;
   /*letter-spacing: 0.02em;*/
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
 
 .reveal h1 {

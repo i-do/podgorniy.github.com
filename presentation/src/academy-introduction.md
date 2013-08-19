@@ -109,3 +109,4 @@
 ## Ссылки
 
 <a href="#">Подписаться</a> на рассылку о курсе
+<img src="http://api.qrserver.com/v1/create-qr-code/?data=http%3A%2F%2Fpodgorniy.github.io%2Fpresentation%2F%3Fpresentation%3Dacademy-introduction%23%2F2&size=500x500">
